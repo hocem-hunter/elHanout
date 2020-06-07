@@ -9,8 +9,8 @@ require('./bootstrap');
 
 Vue.use(Vuetify)
 
-
 let $app = document.querySelector('#app')
+
 if ($app) {
     new Vue({
         el: '#app',
@@ -21,5 +21,5 @@ if ($app) {
         },
         vuetify: new Vuetify()
     })
-    ;
 }
+Vue.prototype.$globals = globalStore;

@@ -1927,6 +1927,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     source: String
@@ -1935,9 +1974,6 @@ __webpack_require__.r(__webpack_exports__);
     return {
       drawer: null
     };
-  },
-  created: function created() {
-    this.$vuetify.theme.dark = true;
   }
 });
 
@@ -2624,7 +2660,7 @@ __webpack_require__.r(__webpack_exports__);
   var SELECTOR_ACTIVE$1 = '.active';
   var SELECTOR_ACTIVE_ITEM = '.active.carousel-item';
   var SELECTOR_ITEM = '.carousel-item';
-  var SELECTOR_ITEM_IMG = '.carousel-item images';
+  var SELECTOR_ITEM_IMG = '.carousel-item img';
   var SELECTOR_NEXT_PREV = '.carousel-item-next, .carousel-item-prev';
   var SELECTOR_INDICATORS = '.carousel-indicators';
   var SELECTOR_DATA_SLIDE = '[data-slide], [data-slide-to]';
@@ -37492,7 +37528,14 @@ var render = function() {
     [
       _c(
         "v-app-bar",
-        { attrs: { app: "", "clipped-left": "", color: "#060539" } },
+        {
+          attrs: {
+            "clipped-left": _vm.$vuetify.breakpoint.lgAndUp,
+            app: "",
+            color: "#060539",
+            dark: ""
+          }
+        },
         [
           _c("v-app-bar-nav-icon", {
             on: {
@@ -37503,7 +37546,172 @@ var render = function() {
             }
           }),
           _vm._v(" "),
-          _c("v-toolbar-title", [_vm._v("Application")])
+          _c(
+            "v-toolbar-title",
+            { staticClass: "ml-0 pl-4", staticStyle: { width: "300px" } },
+            [
+              _c("span", { staticClass: "hidden-sm-and-down" }, [
+                _c("img", {
+                  attrs: {
+                    src: __webpack_require__(/*! ../../../../public/images/elHanout_logo.min.svg */ "./public/images/elHanout_logo.min.svg")
+                  }
+                })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("v-spacer"),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "input-group rounded-pill overflow-hidden d-flex justify-content-end",
+              staticStyle: {
+                border: "2px solid #2F80ED",
+                background: "#2F80ED",
+                width: "60% !important"
+              }
+            },
+            [
+              _c("div", { staticClass: "input-group-prepend" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn  dropdown-toggle",
+                    staticStyle: {
+                      background: "#2F80ED",
+                      "text-decoration": "none",
+                      color: "white"
+                    },
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "dropdown",
+                      "aria-haspopup": "true",
+                      "aria-expanded": "false"
+                    }
+                  },
+                  [_vm._v("Dropdown")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "dropdown-menu" }, [
+                  _c(
+                    "a",
+                    { staticClass: "dropdown-item", attrs: { href: "#" } },
+                    [_vm._v("Action")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    { staticClass: "dropdown-item", attrs: { href: "#" } },
+                    [_vm._v("Another action")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    { staticClass: "dropdown-item", attrs: { href: "#" } },
+                    [_vm._v("Something else here")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "dropdown-divider",
+                    attrs: { role: "separator" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    { staticClass: "dropdown-item", attrs: { href: "#" } },
+                    [_vm._v("Separated link")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control pl-5",
+                attrs: {
+                  type: "text",
+                  placeholder: "Search",
+                  "aria-label": "Search"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "input-group-append d-flex align-items-center justify-content-center font-weight-bold",
+                  staticStyle: { width: "110px" }
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "d-flex align-items-center",
+                      staticStyle: {
+                        background: "#2F80ED",
+                        "text-decoration": "none",
+                        color: "white"
+                      },
+                      attrs: { href: "", type: "submit" }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "mdi mdi-magnify mdi-24px pr-2 "
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        {
+                          staticStyle: {
+                            "font-family": "'Calibri Light'",
+                            "font-size": "18px"
+                          }
+                        },
+                        [_vm._v("Search")]
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c("v-spacer"),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "hidden-md-and-down",
+              staticStyle: { width: "220px" }
+            },
+            [
+              _c("div", { staticClass: "px-5 d-inline" }, [
+                _c(
+                  "a",
+                  {
+                    staticStyle: { "text-decoration": "none", color: "white" },
+                    attrs: { href: "" }
+                  },
+                  [_vm._v("Sign-in")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "ml-2 d-inline" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "rounded-pill btn btn-outline-primary",
+                    staticStyle: {
+                      border: "2px solid #2F80ED",
+                      color: "white"
+                    },
+                    attrs: { type: "submit" }
+                  },
+                  [_vm._v("\n                    Join Now\n                ")]
+                )
+              ])
+            ]
+          )
         ],
         1
       )
@@ -46241,7 +46449,7 @@ var namespaceMap = {
 var isHTMLTag = makeMap(
   'html,body,base,head,link,meta,style,title,' +
   'address,article,aside,footer,header,h1,h2,h3,h4,h5,h6,hgroup,nav,section,' +
-  'div,dd,dl,dt,figcaption,figure,picture,hr,images,li,main,ol,p,pre,ul,' +
+  'div,dd,dl,dt,figcaption,figure,picture,hr,img,li,main,ol,p,pre,ul,' +
   'a,b,abbr,bdi,bdo,br,cite,code,data,dfn,em,i,kbd,mark,q,rp,rt,rtc,ruby,' +
   's,samp,small,span,strong,sub,sup,time,u,var,wbr,area,audio,map,track,video,' +
   'embed,object,param,source,canvas,script,noscript,del,ins,' +
@@ -49873,7 +50081,7 @@ var he = {
 /*  */
 
 var isUnaryTag = makeMap(
-  'area,base,br,col,embed,frame,hr,images,input,isindex,keygen,' +
+  'area,base,br,col,embed,frame,hr,img,input,isindex,keygen,' +
   'link,meta,param,source,track,wbr'
 );
 
@@ -68858,7 +69066,7 @@ var hasIntersect = typeof window !== 'undefined' && 'IntersectionObserver' in wi
 /* @vue/component */
 
 /* harmony default export */ __webpack_exports__["default"] = (_VResponsive__WEBPACK_IMPORTED_MODULE_2__["default"].extend({
-  name: 'v-images',
+  name: 'v-img',
   directives: {
     intersect: _directives_intersect__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
@@ -95636,6 +95844,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./public/images/elHanout_logo.min.svg":
+/*!*********************************************!*\
+  !*** ./public/images/elHanout_logo.min.svg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/elHanout_logo.min.svg?c19fdaa8ea1c785497fb46f836aa1ec9";
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -95674,6 +95893,8 @@ if ($app) {
     vuetify: new vuetify__WEBPACK_IMPORTED_MODULE_1___default.a()
   });
 }
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.prototype.$globals = globalStore;
 
 /***/ }),
 
@@ -95749,7 +95970,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   null,
   null,
   null
-
+  
 )
 
 /* hot reload */
@@ -95769,7 +95990,7 @@ component.options.__file = "resources/js/components/includes/NavBar.vue"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_NavBar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./NavBar.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/includes/NavBar.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_NavBar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]);
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_NavBar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
