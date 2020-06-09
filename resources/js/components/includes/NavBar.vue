@@ -1,5 +1,4 @@
 <template>
-    <v-app id="inspire">
         <v-app-bar
             :clipped-left="$vuetify.breakpoint.lgAndUp"
             app
@@ -12,7 +11,6 @@
                 class="ml-0 pl-4"
             >
                 <span class="hidden-sm-and-down">
-                    <img src="../../../../public/images/elHanout_logo.min.svg"></img>
                 </span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
@@ -53,7 +51,6 @@
                 </div>
             </div>
         </v-app-bar>
-    </v-app>
 </template>
 
 <script>

@@ -2,4 +2,5 @@
 
 @section('content')
     <NavBar></NavBar>
+    <pub></pub>
 @endsection
