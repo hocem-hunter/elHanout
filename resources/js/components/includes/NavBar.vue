@@ -1,21 +1,19 @@
 <template>
-        <v-app-bar
+        <v-app-bar 
             :clipped-left="$vuetify.breakpoint.lgAndUp"
             app
             color="#060539"
             dark
         >
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
-            <v-toolbar-title
-                style="width: 300px"
-                class="ml-0 pl-4"
-            >
-                <span class="hidden-sm-and-down">
-                </span>
-            </v-toolbar-title>
-            <v-spacer></v-spacer>
+            <v-img class="ml-2"
+               :src="'./images/logo2.png'"
+               height="45"
+               width="130"
+            ></v-img>
+          
             <!--Search-->
-            <div class="input-group rounded-pill overflow-hidden d-flex justify-content-end"
+            <div class="input-group rounded-pill overflow-hidden d-flex justify-content-end ml-5"
                  style="border: 2px solid #2F80ED;background: #2F80ED;width: 60% !important;">
                 <div class="input-group-prepend">
                     <a class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -43,8 +41,8 @@
                 <div class="px-5 d-inline">
                     <a href="" style="text-decoration: none; color:white;">Sign-in</a>
                 </div>
-                <div class="ml-2 d-inline">
-                    <button style="border: 2px solid #2F80ED;color: white;" class="rounded-pill btn btn-outline-primary"
+                <div class=" d-inline">
+                    <button style="border: 2px solid #2F80ED;color: white;" class="rounded-pill"
                             type="submit">
                         Join Now
                     </button>

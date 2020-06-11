@@ -1,8 +1,7 @@
 <template>
-    <v-app>
-    <v-container fluid>
-        <v-layout row wrap class="m-2" >
-        <v-flex class="pt-4 pl-4 pr-4">
+    <v-app class="mt-5">
+    <v-container fluid >
+        <v-flex class="pt-5">
             <v-carousel hide-delimiter-background show-arrows-on-hover cycle height="250"  style="border-radius: 15px;">
             <v-carousel-item 
                 v-for="meetup in meetups"
@@ -12,8 +11,7 @@
             </v-carousel-item>
             </v-carousel>
         </v-flex>
-                    <grid class="m-4"></grid>
-        </v-layout>  
+                    <grid></grid>
         </v-container>
     </v-app>
 </template>

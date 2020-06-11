@@ -1926,8 +1926,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1959,8 +1957,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -37792,46 +37788,40 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-app",
+    { staticClass: "mt-5" },
     [
       _c(
         "v-container",
         { attrs: { fluid: "" } },
         [
           _c(
-            "v-layout",
-            { staticClass: "m-2", attrs: { row: "", wrap: "" } },
+            "v-flex",
+            { staticClass: "pt-5" },
             [
               _c(
-                "v-flex",
-                { staticClass: "pt-4 pl-4 pr-4" },
-                [
-                  _c(
-                    "v-carousel",
-                    {
-                      staticStyle: { "border-radius": "15px" },
-                      attrs: {
-                        "hide-delimiter-background": "",
-                        "show-arrows-on-hover": "",
-                        cycle: "",
-                        height: "250"
-                      }
-                    },
-                    _vm._l(_vm.meetups, function(meetup) {
-                      return _c("v-carousel-item", {
-                        key: meetup.id,
-                        attrs: { src: meetup.imageUrl, href: meetup.link }
-                      })
-                    }),
-                    1
-                  )
-                ],
+                "v-carousel",
+                {
+                  staticStyle: { "border-radius": "15px" },
+                  attrs: {
+                    "hide-delimiter-background": "",
+                    "show-arrows-on-hover": "",
+                    cycle: "",
+                    height: "250"
+                  }
+                },
+                _vm._l(_vm.meetups, function(meetup) {
+                  return _c("v-carousel-item", {
+                    key: meetup.id,
+                    attrs: { src: meetup.imageUrl, href: meetup.link }
+                  })
+                }),
                 1
-              ),
-              _vm._v(" "),
-              _c("grid", { staticClass: "m-4" })
+              )
             ],
             1
-          )
+          ),
+          _vm._v(" "),
+          _c("grid")
         ],
         1
       )
@@ -37881,19 +37871,16 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c(
-        "v-toolbar-title",
-        { staticClass: "ml-0 pl-4", staticStyle: { width: "300px" } },
-        [_c("span", { staticClass: "hidden-sm-and-down" })]
-      ),
-      _vm._v(" "),
-      _c("v-spacer"),
+      _c("v-img", {
+        staticClass: "ml-2",
+        attrs: { src: "./images/logo2.png", height: "45", width: "130" }
+      }),
       _vm._v(" "),
       _c(
         "div",
         {
           staticClass:
-            "input-group rounded-pill overflow-hidden d-flex justify-content-end",
+            "input-group rounded-pill overflow-hidden d-flex justify-content-end ml-5",
           staticStyle: {
             border: "2px solid #2F80ED",
             background: "#2F80ED",
@@ -38010,11 +37997,11 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "ml-2 d-inline" }, [
+          _c("div", { staticClass: " d-inline" }, [
             _c(
               "button",
               {
-                staticClass: "rounded-pill btn btn-outline-primary",
+                staticClass: "rounded-pill",
                 staticStyle: { border: "2px solid #2F80ED", color: "white" },
                 attrs: { type: "submit" }
               },
